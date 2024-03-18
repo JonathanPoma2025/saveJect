@@ -1,17 +1,17 @@
 <x-nav/>
-<body class="bg-slate-950">
+<body class="bg-verde1">
     <x-layout>
 
         <!-- TÍTULO -->
-        <h1 class="text-3xl text-white m-4 font-bold text-center">Sign in</h1>
+        <h1 class="text-6xl text-verde4 m-16 font-bold text-center">Sign in</h1>
 
         <!-- FORMULARIO 1 -->
-        <form action="/login" method="POST">
+        <form class="text-center text-white m-27 " action="/login" method="POST">
             @csrf
 
             <!-- CORREO -->
-            <div>
-                <x-input titulo="Email" tipo="text" nombre="email" />
+            <div class="m-24">
+                <x-input  titulo="Email" tipo="text" nombre="email" />
             </div>
 
             <!-- CONTRASEÑA -->
@@ -20,7 +20,7 @@
             </div>
 
             <!-- BOTÓN -->
-            <button type="submit">Log In</button>
+            <button class="m-24" type="submit">Log In</button>
 
         </form>
 
