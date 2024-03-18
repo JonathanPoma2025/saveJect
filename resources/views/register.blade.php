@@ -1,4 +1,4 @@
-<div>
+<x-layout>
 
      <!-- TÍTULO -->
      <h1 class="">Sign up</h1>
@@ -9,38 +9,22 @@
 
          <!-- NAME -->
          <div>
-             <label for="">Name</label>
-             <input name="name" type="text">
-             @error('name')
-                <span> {{ $message }} </span>
-             @enderror
+            <x-input titulo="Name" tipo="text" nombre="name"/>
          </div>
 
          <!-- EMAIL -->
          <div>
-             <label for="">Email</label>
-             <input name="email" type="text">
-             @error('email')
-                <span> {{ $message }} </span>
-             @enderror
+            <x-input titulo="Email" tipo="text" nombre="email"/>
          </div>
 
           <!-- CONTRASEÑA -->
          <div>
-            <label for="">Password</label>
-            <input name="password" type="password">
-            @error('password')
-                <span> {{ $message }} </span>
-             @enderror
+            <x-input titulo="Password" tipo="password" nombre="password"/>
          </div>
 
           <!-- BIRTHDATE -->
           <div>
-            <label for="">Birthdate</label>
-            <input name="birthdate" type="date">
-            @error('birthdate')
-                <span> {{ $message }} </span>
-             @enderror
+            <x-input titulo="Birthdate" tipo="date" nombre="birthdate"/>
          </div>
 
 
@@ -49,4 +33,4 @@
 
      </form>
 
-</div>
+</x-layout>
